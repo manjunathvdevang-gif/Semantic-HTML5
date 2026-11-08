@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Projects & Architecture Portfolio | Alex Rivera</title>
+  <meta name="description" content="Explore Alex Rivera's portfolio of web development projects, including interactive state-driven apps, asynchronous REST dashboards, and modular capstone applications.">
+  <meta name="keywords" content="Portfolio Projects, Web Development Showcase, JavaScript Apps, CSS Grid Projects">
+  <meta name="author" content="Alex Rivera">
+  <link rel="canonical" href="https://alexrivera.dev/projects.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects Portfolio | Alex Rivera">
+  <meta property="og:description" content="Explore selected client-side, asynchronous, and modular web applications.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Alex Rivera Portfolio Home">
+        <span>Alex Rivera</span>
+        <span class="brand-badge" aria-hidden="true">DEV</span>
+      </a>
+
+      <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link" aria-current="page">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch between light and dark mode" type="button">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open main menu" aria-expanded="false" aria-controls="primary-nav" type="button">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section class="section-py" aria-labelledby="portfolio-page-title" style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-title-wrap" style="margin-bottom: 0;">
+          <span class="section-badge">Featured Work & Code</span>
+          <h1 id="portfolio-page-title" class="section-title">Projects Showcase</h1>
+          <p class="section-subtitle">Real-world web applications built with strict semantic HTML5, advanced CSS3 Grid/Flexbox, state management, and async APIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-py" aria-labelledby="projects-grid-heading">
+      <div class="container">
+        <h2 id="projects-grid-heading" class="visually-hidden" style="position: absolute; left: -9999px;">Project List</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1: To-Do App (Task 3) -->
+          <article class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-mockup" aria-hidden="true">📋</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Task 3 • DOM & State Management</span>
+              <h3 class="project-title">Interactive Task Manager</h3>
+              <p class="project-desc">A state-driven task tracking suite featuring full CRUD operations, localStorage persistence, category filters (All, Active, Completed), inline editing, and keyboard accessibility.</p>
+              
+              <h4 style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Key Architecture:</h4>
+              <ul class="project-tags">
+                <li class="tag-badge">Event Delegation</li>
+                <li class="tag-badge">window.localStorage</li>
+                <li class="tag-badge">Dynamic DOM</li>
+                <li class="tag-badge">CRUD Engine</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="../task-3-todo/index.html" class="btn btn-primary project-btn-sm">Launch App 🚀</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Weather Dashboard (Task 4) -->
+          <article class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-mockup" aria-hidden="true">🌤️</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Task 4 • Async JS & REST APIs</span>
+              <h3 class="project-title">Real-Time Weather Matrix</h3>
+              <p class="project-desc">Real-time weather station querying live REST API endpoints via async/await Fetch API. Parses nested meteorological metrics: temperature, humidity, wind speed, UV index, and 5-day forecasts.</p>
+              
+              <h4 style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Key Architecture:</h4>
+              <ul class="project-tags">
+                <li class="tag-badge">Fetch API</li>
+                <li class="tag-badge">Async / Await</li>
+                <li class="tag-badge">Nested JSON</li>
+                <li class="tag-badge">Error Boundaries</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="../task-4-weather/index.html" class="btn btn-primary project-btn-sm">Launch App 🚀</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Capstone E-Commerce (Task 5) -->
+          <article class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-mockup" aria-hidden="true">🛒</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Task 5 • Full-Stack Architecture Capstone</span>
+              <h3 class="project-title">Modular E-Commerce Catalog</h3>
+              <p class="project-desc">Complete client-side Single Page Application with hash routing, category filters, real-time search, responsive product grid, persistent shopping cart, and multi-step checkout workflow.</p>
+              
+              <h4 style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Key Architecture:</h4>
+              <ul class="project-tags">
+                <li class="tag-badge">SPA Routing</li>
+                <li class="tag-badge">Modular Architecture</li>
+                <li class="tag-badge">Cart State Store</li>
+                <li class="tag-badge">Deployment Ready</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="../task-5-capstone-ecommerce/index.html" class="btn btn-primary project-btn-sm">Launch App 🚀</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Rivera. Built with semantic HTML5 & modern CSS3 Grid.</p>
+        <p><a href="contact.html">Get in touch</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

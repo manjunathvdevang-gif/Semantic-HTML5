@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Alex Rivera | Senior Full-Stack Engineer & Accessible Web Architect</title>
+  <meta name="description" content="Portfolio of Alex Rivera, Senior Full-Stack Engineer specializing in accessible, performant, and responsive web applications with modern HTML5, CSS3, and JavaScript.">
+  <meta name="keywords" content="Full-Stack Developer, Web Accessibility, WCAG, HTML5, CSS Grid, JavaScript, Portfolio, Frontend Engineer">
+  <meta name="author" content="Alex Rivera">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alexrivera.dev/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexrivera.dev/">
+  <meta property="og:title" content="Alex Rivera | Senior Full-Stack Engineer">
+  <meta property="og:description" content="High performance, accessible, responsive web solutions. Check out my work, skills, and case studies.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&auto=format&fit=crop&q=80">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alex Rivera | Senior Full-Stack Engineer">
+  <meta name="twitter:description" content="High performance, accessible, responsive web solutions.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&auto=format&fit=crop&q=80">
+
+  <!-- Schema.org JSON-LD for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Rivera",
+    "url": "https://alexrivera.dev",
+    "jobTitle": "Senior Full-Stack Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "CloudTech Solutions"
+    },
+    "sameAs": [
+      "https://github.com",
+      "https://linkedin.com"
+    ]
+  }
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- WCAG Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Primary Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Alex Rivera Portfolio Home">
+        <span>Alex Rivera</span>
+        <span class="brand-badge" aria-hidden="true">DEV</span>
+      </a>
+
+      <!-- Desktop & Mobile Nav -->
+      <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher & Mobile Toggle -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch between light and dark mode" type="button">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open main menu" aria-expanded="false" aria-controls="primary-nav" type="button">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" role="main">
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="section-badge">Available for New Projects</span>
+            <h1 id="hero-heading">
+              Engineering <span class="text-gradient">Accessible, Modern</span> Web Applications.
+            </h1>
+            <p class="hero-description">
+              Hi, I’m <strong>Alex Rivera</strong>. I specialize in building semantic, WCAG-compliant digital experiences with modern HTML5, responsive CSS3 Grid & Flexbox, and state-driven JavaScript architecture.
+            </p>
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">
+                <span>View Portfolio Projects</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+            </div>
+          </div>
+
+          <aside class="hero-visual" aria-label="Engineer profile card">
+            <article class="avatar-card">
+              <div class="avatar-img-wrap">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80" alt="Headshot photograph of Alex Rivera smiling" class="avatar-img" width="140" height="140">
+              </div>
+              <h2 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Alex Rivera</h2>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Lead Frontend Architect</p>
+              <div class="avatar-badge-status">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span>Open for contract & roles</span>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics / Key Achievements Grid -->
+    <section class="section-py" aria-labelledby="metrics-heading" style="padding-bottom: 1rem;">
+      <div class="container">
+        <h2 id="metrics-heading" class="visually-hidden" style="position: absolute; left: -9999px;">Engineering Milestones</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Lighthouse A11y & SEO</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">45+</span>
+            <span class="stat-label">Shipped Applications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">99.9%</span>
+            <span class="stat-label">Production Reliability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Competencies (CSS Grid) -->
+    <section class="section-py" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Technical Mastery</span>
+          <h2 id="skills-heading" class="section-title">Core Development Stack</h2>
+          <p class="section-subtitle">Engineered with high standards of accessibility, maintainability, and clean design patterns.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🌐</div>
+            <h3>Semantic HTML5</h3>
+            <p>Strict semantic tag architecture, WCAG 2.1 AA compliance, ARIA landmark roles, and SEO-optimized markup.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🎨</div>
+            <h3>Modern CSS3 & Grid</h3>
+            <p>Fluid responsive design, CSS Grid & Flexbox layouts, custom theme properties, animations, and zero-framework purity.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">⚡</div>
+            <h3>Modern JavaScript</h3>
+            <p>ES6+ modular design, client-side state handling, DOM manipulation, delegated event listeners, and localStorage caching.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">📡</div>
+            <h3>Async & REST APIs</h3>
+            <p>Robust fetch pipelines, async/await error boundaries, resilient JSON parsing, and real-time dashboard integrations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Grid Section -->
+    <section class="section-py" aria-labelledby="featured-projects-heading" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Selected Work</span>
+          <h2 id="featured-projects-heading" class="section-title">Featured Case Studies</h2>
+          <p class="section-subtitle">Explore selected projects demonstrating end-to-end full-stack frontend engineering.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <article class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-mockup" aria-hidden="true">📝</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Task Management</span>
+              <h3 class="project-title">State-Driven Task Board</h3>
+              <p class="project-desc">Interactive To-Do application featuring full CRUD capabilities, localStorage synchronization, dynamic element lifecycle, and multi-state filtering.</p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag-badge">JavaScript</li>
+                <li class="tag-badge">LocalStorage</li>
+                <li class="tag-badge">DOM Events</li>
+              </ul>
+              <div class="project-links">
+                <a href="../task-3-todo/index.html" class="btn btn-primary project-btn-sm">Launch App</a>
+                <a href="projects.html" class="btn btn-outline project-btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-mockup" aria-hidden="true">⛅</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Async & REST APIs</span>
+              <h3 class="project-title">Real-Time Weather Matrix</h3>
+              <p class="project-desc">Live meteorological dashboard fetching real-time JSON metrics (humidity, wind speed, UV index) with resilient error handling and city search.</p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag-badge">Fetch API</li>
+                <li class="tag-badge">Async/Await</li>
+                <li class="tag-badge">REST API</li>
+              </ul>
+              <div class="project-links">
+                <a href="../task-4-weather/index.html" class="btn btn-primary project-btn-sm">Launch App</a>
+                <a href="projects.html" class="btn btn-outline project-btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-mockup" aria-hidden="true">🛍️</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Capstone Architecture</span>
+              <h3 class="project-title">Modular E-Commerce Portal</h3>
+              <p class="project-desc">Complete Single Page Application (SPA) with client-side routing, product filters, persistent cart store, responsive layout, and checkout simulation.</p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag-badge">SPA Routing</li>
+                <li class="tag-badge">State Management</li>
+                <li class="tag-badge">Responsive</li>
+              </ul>
+              <div class="project-links">
+                <a href="../task-5-capstone-ecommerce/index.html" class="btn btn-primary project-btn-sm">Launch App</a>
+                <a href="projects.html" class="btn btn-outline project-btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="projects.html" class="btn btn-outline">Explore All Projects & Architecture Specs →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action / Contact banner -->
+    <section class="section-py" aria-labelledby="cta-heading">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, var(--accent-subtle), var(--bg-card)); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 3rem 2rem; text-align: center; max-width: 800px; margin: 0 auto;">
+          <h2 id="cta-heading" style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-primary);">Let's Build Something Exceptional Together</h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem auto; font-size: 1.05rem;">
+            Have a project in mind, an open engineering role, or questions about web accessibility? My inbox is always open.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer Landmark -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <span>Alex Rivera</span>
+            <span class="brand-badge">DEV</span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px;">
+            Full-stack software developer crafting accessible, highly responsive web systems.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About Me</a></li>
+            <li><a href="projects.html" class="footer-nav-link">Projects</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com" class="footer-nav-link" target="_blank" rel="noopener noreferrer">GitHub (External)</a></li>
+            <li><a href="https://linkedin.com" class="footer-nav-link" target="_blank" rel="noopener noreferrer">LinkedIn (External)</a></li>
+            <li><a href="mailto:alex.rivera@example.com" class="footer-nav-link">alex.rivera@example.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Rivera. Built with semantic HTML5, CSS3 Grid/Flexbox, and WCAG AA accessibility standards.</p>
+        <p>100% Validated Semantic Web Architecture</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

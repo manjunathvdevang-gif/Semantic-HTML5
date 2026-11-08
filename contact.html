@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contact Alex Rivera | Accessible Web Engineering Inquiries</title>
+  <meta name="description" content="Reach out to Alex Rivera for full-stack engineering opportunities, consultation, or technical inquiries. Accessible, tab-navigable contact form.">
+  <meta name="keywords" content="Contact Alex Rivera, Hire Frontend Developer, Full-Stack Engineer Inquiry, Web Development Contact">
+  <meta name="author" content="Alex Rivera">
+  <link rel="canonical" href="https://alexrivera.dev/contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Alex Rivera | Accessible Web Engineering">
+  <meta property="og:description" content="Send a message or schedule a consultation. Fully accessible and tab-navigable form.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Alex Rivera Portfolio Home">
+        <span>Alex Rivera</span>
+        <span class="brand-badge" aria-hidden="true">DEV</span>
+      </a>
+
+      <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch between light and dark mode" type="button">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open main menu" aria-expanded="false" aria-controls="primary-nav" type="button">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section class="section-py" aria-labelledby="contact-heading" style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-title-wrap" style="margin-bottom: 0;">
+          <span class="section-badge">Get In Touch</span>
+          <h1 id="contact-heading" class="section-title">Let’s Start a Conversation</h1>
+          <p class="section-subtitle">Whether you have a question about full-stack engineering, a project collaboration, or accessibility best practices, feel free to reach out.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-py">
+      <div class="container">
+        <div class="contact-layout">
+          
+          <!-- Contact Methods & Details Aside -->
+          <aside class="contact-info-card" aria-label="Direct contact details">
+            <h2 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Direct Channels</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Prefer direct email or professional social networks? Feel free to connect below:</p>
+
+            <ul class="contact-method-list">
+              <li class="contact-method-item">
+                <div class="contact-icon-bubble" aria-hidden="true">✉️</div>
+                <div>
+                  <span class="contact-method-label">Email</span>
+                  <div><a href="mailto:alex.rivera@example.com" class="contact-method-val">alex.rivera@example.com</a></div>
+                </div>
+              </li>
+
+              <li class="contact-method-item">
+                <div class="contact-icon-bubble" aria-hidden="true">💼</div>
+                <div>
+                  <span class="contact-method-label">LinkedIn</span>
+                  <div><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method-val">linkedin.com/in/alexrivera-dev</a></div>
+                </div>
+              </li>
+
+              <li class="contact-method-item">
+                <div class="contact-icon-bubble" aria-hidden="true">🐙</div>
+                <div>
+                  <span class="contact-method-label">GitHub</span>
+                  <div><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-method-val">github.com/alexrivera-dev</a></div>
+                </div>
+              </li>
+
+              <li class="contact-method-item">
+                <div class="contact-icon-bubble" aria-hidden="true">📍</div>
+                <div>
+                  <span class="contact-method-label">Location</span>
+                  <div class="contact-method-val">San Francisco, CA (UTC-8)</div>
+                </div>
+              </li>
+            </ul>
+
+            <div style="margin-top: 2rem; padding: 1.25rem; background: var(--bg-tertiary); border-radius: var(--radius-lg); font-size: 0.85rem; color: var(--text-secondary);">
+              <strong>Accessibility Note:</strong> This form strictly follows W3C WAI-ARIA authoring practices. You can navigate the complete form using your keyboard (<kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>, <kbd>Enter</kbd>).
+            </div>
+          </aside>
+
+          <!-- Fully Accessible, Tab-Navigable Contact Form -->
+          <section aria-labelledby="form-heading" class="contact-form-container">
+            <h2 id="form-heading" style="font-size: 1.35rem; margin-bottom: 1.5rem;">Send a Direct Message</h2>
+
+            <!-- ARIA Live Status Announcement Region -->
+            <div id="form-alert" class="alert-box" role="alert" aria-live="polite" tabindex="-1"></div>
+
+            <form id="contact-form" novalidate aria-describedby="form-instructions">
+              <p id="form-instructions" class="visually-hidden" style="position: absolute; left: -9999px;">
+                All fields marked with an asterisk are required. Error messages will be announced dynamically.
+              </p>
+
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="full-name" class="form-label">
+                  <span>Full Name <span class="required-indicator" aria-hidden="true">*</span></span>
+                  <span class="form-hint">e.g. Jane Doe</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="full-name" 
+                  name="fullName" 
+                  class="form-input" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="name-error"
+                  autocomplete="name"
+                  placeholder="Enter your full name"
+                >
+                <span id="name-error" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Address Field -->
+              <div class="form-group">
+                <label for="email-address" class="form-label">
+                  <span>Email Address <span class="required-indicator" aria-hidden="true">*</span></span>
+                  <span class="form-hint">We'll never share your email</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="email-address" 
+                  name="emailAddress" 
+                  class="form-input" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="email-error"
+                  autocomplete="email"
+                  placeholder="name@example.com"
+                >
+                <span id="email-error" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="message-subject" class="form-label">
+                  <span>Topic / Subject <span class="required-indicator" aria-hidden="true">*</span></span>
+                </label>
+                <select 
+                  id="message-subject" 
+                  name="subject" 
+                  class="form-select" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="subject-error"
+                >
+                  <option value="">-- Please select an option --</option>
+                  <option value="project">Project Collaboration / Contract</option>
+                  <option value="employment">Full-Time Career Opportunity</option>
+                  <option value="consultation">Web Accessibility Audit</option>
+                  <option value="other">General Inquiries</option>
+                </select>
+                <span id="subject-error" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Body Field -->
+              <div class="form-group">
+                <label for="message-body" class="form-label">
+                  <span>Your Message <span class="required-indicator" aria-hidden="true">*</span></span>
+                  <span class="form-hint">Minimum 10 characters</span>
+                </label>
+                <textarea 
+                  id="message-body" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="5" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="body-error"
+                  placeholder="Describe your inquiry or project details..."
+                ></textarea>
+                <span id="body-error" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem;">
+                <span>Send Message</span>
+                <span aria-hidden="true">✉️</span>
+              </button>
+            </form>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Rivera. Built with semantic HTML5 & WCAG AA standards.</p>
+        <p><a href="index.html">Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
